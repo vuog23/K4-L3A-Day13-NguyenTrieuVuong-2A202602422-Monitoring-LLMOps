@@ -1,0 +1,33 @@
+CP0 baseline — 2026-09-29 UTC
+Python: 3.11.15
+Dependencies: installed from requirements.txt in .venv
+This PowerShell session does not resolve `python` on PATH; commands used .\\.venv\\Scripts\\python.exe.
+
+GET http://127.0.0.1:8000/health
+{"ok":true,"tracing_enabled":false,"incidents":{"rag_slow":false,"tool_fail":false,"cost_spike":false}}
+
+.\\.venv\\Scripts\\python.exe scripts/load_test.py
+10/10 sample requests returned HTTP 200.
+data/logs.jsonl created with 21 records after startup and load test.
+Responses currently show correlation_id=MISSING; this is baseline before CP1.
+
+.\\.venv\\Scripts\\python.exe scripts/validate_logs.py
+Total log records analyzed: 21
+Records with missing required fields: 20
+Records with missing enrichment (context): 20
+Unique correlation IDs found: 0
+Potential PII leaks detected: 0
+Estimated Score: 30/100
+
+.\\.venv\\Scripts\\python.exe scripts/validate_dashboard.py
+HỢP LỆ: 6/6 panel có trong dashboard contract.
+
+.\\.venv\\Scripts\\python.exe -m pytest -q
+22 passed in 3.00s
+
+GET http://127.0.0.1:8000/metrics
+traffic: 10
+latency_p95: 151 ms
+ttft_p95: 50 ms
+
+Langfuse trace verification: pending personal project and API keys.

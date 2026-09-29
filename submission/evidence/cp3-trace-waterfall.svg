@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="290" viewBox="0 0 1100 290">
+<rect width="1100" height="290" fill="#0c1422"/>
+<text x="28" y="32" fill="#f2f7ff" font-family="Arial" font-size="20">Challenge trace waterfall - req-5904c050</text>
+<text x="28" y="260" fill="#a7b8cc" font-family="Arial" font-size="13">Trace 10da76cfe583b16100acf7187b5db0ff - source: Langfuse Observations API v2</text>
+<line x1="310.0" y1="48" x2="310.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="297.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">0.0s</text>
+<line x1="430.0" y1="48" x2="430.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="417.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">0.5s</text>
+<line x1="550.0" y1="48" x2="550.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="537.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">1.0s</text>
+<line x1="670.0" y1="48" x2="670.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="657.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">1.5s</text>
+<line x1="790.0" y1="48" x2="790.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="777.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">2.0s</text>
+<line x1="910.0" y1="48" x2="910.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="897.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">2.5s</text>
+<line x1="1030.0" y1="48" x2="1030.0" y2="225" stroke="#2a4058" stroke-dasharray="3 4"/>
+<text x="1017.0" y="242" fill="#a7b8cc" font-family="Arial" font-size="12">3.0s</text>
+<text x="28" y="74" fill="#f2f7ff" font-family="Arial" font-size="15">lab-agent-run</text>
+<rect x="310.0" y="55" width="637.2" height="28" rx="5" fill="#7e9fff"/>
+<text x="1035" y="74" text-anchor="end" fill="#f2f7ff" font-family="Arial" font-size="15">2655 ms</text>
+<text x="28" y="129" fill="#f2f7ff" font-family="Arial" font-size="15">retrieve-context</text>
+<rect x="310.2" y="110" width="600.2" height="28" rx="5" fill="#f4b45e"/>
+<text x="1035" y="129" text-anchor="end" fill="#f2f7ff" font-family="Arial" font-size="15">2501 ms</text>
+<text x="28" y="184" fill="#f2f7ff" font-family="Arial" font-size="15">fake-llm-generate</text>
+<rect x="910.7" y="165" width="36.2" height="28" rx="5" fill="#6fd6b0"/>
+<text x="1035" y="184" text-anchor="end" fill="#f2f7ff" font-family="Arial" font-size="15">151 ms</text>
+</svg>

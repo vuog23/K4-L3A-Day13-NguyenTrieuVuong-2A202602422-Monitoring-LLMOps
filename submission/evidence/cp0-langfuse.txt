@@ -1,0 +1,23 @@
+CP0 Langfuse verification — 2026-09-29 UTC
+
+LANGFUSE_PUBLIC_KEY and LANGFUSE_SECRET_KEY are present in local .env.
+LANGFUSE_BASE_URL points to the Japan Langfuse Cloud region.
+.env is ignored by Git. No key values are recorded here.
+
+GET /api/public/projects with the configured key pair: HTTP 200.
+Project was initially named My Project.
+After rename, GET /api/public/projects returned: day13-k4-l3a-2A202602422 (HTTP 200).
+
+Local GET /health after API restart:
+{"ok":true,"tracing_enabled":true,"incidents":{"rag_slow":false,"tool_fail":false,"cost_spike":false}}
+
+Load test: 10/10 sample requests returned HTTP 200.
+Read-only GET /api/public/v2/observations, 30-minute time window: HTTP 200.
+10 new lab-agent-run observations, each with a distinct trace ID, were visible in the project.
+After rename, the same project still contained 10 lab-agent-run observations and 10 distinct trace IDs.
+Examples:
+- 88a976e10e374a7ef45e073401c9d6e9 — 2026-09-29T07:48:49.723Z
+- 67cc633c4dcac8e1bd214f0c6f3dc837 — 2026-09-29T07:48:49.427Z
+- 1bcb963d0bda7c3aa5d6e56f8d2fdf76 — 2026-09-29T07:48:48.959Z
+
+Prompt day13-chat with production label is not created yet; the starter used its local fallback. Prompt versioning belongs to CP2.

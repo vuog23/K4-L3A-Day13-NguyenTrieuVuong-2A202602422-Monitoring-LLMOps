@@ -1,0 +1,29 @@
+{
+  "project": "day13-k4-l3a-2A202602422",
+  "prompt": "day13-chat",
+  "final_label_state": {
+    "baseline": {
+      "version": 1,
+      "labels": [
+        "baseline",
+        "production"
+      ]
+    },
+    "candidate": {
+      "version": 2,
+      "labels": [
+        "candidate",
+        "latest"
+      ]
+    },
+    "production": {
+      "version": 1,
+      "labels": [
+        "baseline",
+        "production"
+      ]
+    }
+  },
+  "promotion_trace_correlation_id": "req-c2a10008",
+  "rollback_trace_correlation_id": "req-c2a10009"
+}

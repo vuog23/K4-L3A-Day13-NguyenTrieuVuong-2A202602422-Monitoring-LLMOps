@@ -1,0 +1,5 @@
+source: K4-L3A-challenge.json
+target: config/challenge.json
+identical_sha256: b11e6286f35cde0d744adc5edcb5e0a9cdffca865eb281b2c481219b2c86f6bf
+cohort: K4
+challenge_id: day13-k4-l3a-monitoring-llmops-v1

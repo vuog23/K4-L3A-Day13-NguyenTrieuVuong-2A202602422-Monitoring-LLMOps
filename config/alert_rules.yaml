@@ -1,25 +1,28 @@
 alerts:
-  - name: TODO_alert_1
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: high_tail_latency
+    severity: warning
+    condition: 'latency_p95_ms > 1000 and request_count_5m >= 20'
+    duration: 5m
     type: symptom-based
     channel: slack
-    owner: TODO
+    slack_channel: '#llmops-alerts'
+    owner: student-2A202602422
     runbook: docs/alerts.md#alert-1
-  - name: TODO_alert_2
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: elevated_errors_or_retrieval_failures
+    severity: critical
+    condition: '(error_rate_pct > 2 or retrieval_success_rate_pct < 90) and request_count_5m >= 20'
+    duration: 5m
     type: symptom-based
     channel: slack
-    owner: TODO
+    slack_channel: '#llmops-alerts'
+    owner: student-2A202602422
     runbook: docs/alerts.md#alert-2
-  - name: TODO_alert_3
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: unexpected_llm_spend
+    severity: warning
+    condition: 'cost_usd_10m > 0.05 and request_count_10m >= 20'
+    duration: 10m
     type: symptom-based
     channel: slack
-    owner: TODO
+    slack_channel: '#llmops-alerts'
+    owner: student-2A202602422
     runbook: docs/alerts.md#alert-3

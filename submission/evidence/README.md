@@ -32,3 +32,13 @@ Từ `submission/REPORT.md`, dẫn ảnh bằng đường dẫn tương đối:
 ```
 
 Không commit secret, API key, PII thô hoặc evidence của học viên/lớp khác.
+
+CP3 log exports (`cp3-*-logs.jsonl` and `cp3-selected-log.jsonl`) omit
+`payload`, `session_id`, and `user_id_hash` to avoid publishing the private
+challenge query values. Timestamps, event names, correlation IDs, feature,
+latency, token/cost fields, and status were retained. The original runtime
+`data/logs.jsonl` remains ignored by Git.
+
+The CP2 Langfuse API export keeps IDs, hierarchy, prompt metadata, usage, and
+cost. USD cost values are rounded to six decimal places to remove floating
+point serialization noise; the observations in Langfuse are unchanged.

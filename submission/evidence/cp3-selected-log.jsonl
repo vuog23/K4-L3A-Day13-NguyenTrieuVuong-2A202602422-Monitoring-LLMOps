@@ -1,0 +1,2 @@
+{"service": "api", "event": "request_received", "model": "claude-sonnet-4-5", "env": "dev", "correlation_id": "req-5904c050", "feature": "monitoring", "level": "info", "ts": "2026-09-29T14:19:36.106911Z"}
+{"service": "api", "latency_ms": 2653, "ttft_ms": 50, "tokens_in": 35, "tokens_out": 83, "cost_usd": 0.00135, "quality_score": 0.8, "tool_name": "retrieval", "tool_success": true, "event": "response_sent", "model": "claude-sonnet-4-5", "env": "dev", "correlation_id": "req-5904c050", "feature": "monitoring", "level": "info", "ts": "2026-09-29T14:19:38.764065Z"}

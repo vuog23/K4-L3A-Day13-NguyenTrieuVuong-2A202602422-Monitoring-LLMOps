@@ -2,12 +2,13 @@ service: day13-l3a-monitoring-llmops-lab
 primary_slo:
   name: fast_successful_requests
   window: 28d
+  latency_threshold_ms: 3000
   sli:
     good_event: 'event == "response_sent" and latency_ms <= 3000'
     total_event: 'event == "request_received"'
   target_percent: 99.5
   error_budget_percent: 0.5
-  note: Học viên phải giải thích hoặc điều chỉnh ngưỡng bằng baseline của mình.
+  note: Baseline CP1 P95 dưới 1 giây; ngưỡng 3 giây là giới hạn user-facing bảo thủ. Cảnh báo P95 1 giây phát hiện suy giảm sớm trước khi chạm SLO.
 guardrails:
   error_rate_pct_max: 2
   daily_cost_usd_max: 2.5
