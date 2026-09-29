@@ -7,7 +7,7 @@
 - **Họ và tên:** Nguyễn Triều Vương
 - **MSSV:** 2A202602422
 - **Lớp:** K4-L3A
-- **Repository URL:** https://github.com/vuog23/K4-L3A-Day13-Monitoring-LLMOps
+- **Repository URL:** https://github.com/vuog23/K4-L3A-Day13-NguyenTrieuVuong-2A202602422-Monitoring-LLMOps
 - **Commit SHA cuối:**
 - **Challenge ID:** `day13-k4-l3a-monitoring-llmops-v1`
 - **Tên project Langfuse cá nhân:** `day13-k4-l3a-2A202602422` (đã xác nhận qua API, 10 trace ID riêng biệt)
